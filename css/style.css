@@ -1517,3 +1517,19 @@ ul.bullet {
   margin: 0 auto; 
   width: 55%;
 }
+
+/*
+ * Class Styles
+ */
+
+ .my-button {
+  background: linear-gradient(#e2caae, #c39f70) !important;
+  text-transform: uppercase !important;
+  font-weight: 400 !important;
+  line-height: normal !important;
+  padding: 10px 25px !important;
+  border-radius: 5px !important;
+  border-bottom: 1px solid #a68861 !important;
+  background-color: #fff !important;
+  color: #715b3e !important;
+ }
