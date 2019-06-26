@@ -3,7 +3,13 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
 <!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->    
-    <head>
+    <head>		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script> 
+		$(document).ready(function(){
+			$("#includedContent").load("thingface.html");
+		});
+		</script> 
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
@@ -447,51 +453,10 @@
                         </div> <!-- .row -->
                     </div> <!-- .container -->
                 </div> <!-- section -->
-            </main> <!-- .main-content -->
-
-            <footer class="site-footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="widget">
-                                <h3 class="widget-title">Our address</h3>
-                                <p>There is but one Church in which men find salvation, just as outside the ark of Noah it was not possible for anyone to be saved. (Thomas Aquinas)</p>
-                                <ul class="address">
-                                    <li><i class="fa fa-map-marker"></i> 1313 Mockingbird Ln, Cleveland, OH 44106</li>
-                                    <li><i class="fa fa-phone"></i> (216) 555 0180</li>
-                                    <li><i class="fa fa-envelope"></i> info@passoverangel.com</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="widget text-center">
-                                <h2 class="widget-title">Free Gift With Donation!</h2>
-                                <a href="book.html"><img src="images/book_thumb.png"></a>
-                                <p><strong>$29.95</strong></p>
-                                <img src="https://www.paypalobjects.com/webstatic/en_US/i/btn/png/btn_donate_cc_147x47.png" alt="Donate">
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="widget">
-                                <h3 class="widget-title"><a name="contact">Contact form</a></h3>
-                                <form action="#" class="contact-form">
-                                    <div class="row">
-                                        <div class="col-md-6"><input type="text" placeholder="Your name..."></div>
-                                        <div class="col-md-6"><input type="text" placeholder="Email..."></div>
-                                    </div>
-                                    <textarea name="" placeholder="Your message..."></textarea>
-                                    <div class="text-right"><input type="submit" value="Send message"></div>
-                                </form>
-                            </div>
-                        </div>
-                    </div> <!-- .row -->
-
-                    <p class="colophon">Copyright 2019 Church of the Passover Angel. All right reserved</p>
-                </div><!-- .container -->
-            </footer> <!-- .site-footer -->
+				<div id="includedContent"></div>	
+			</main> <!-- .main-content -->		
         </div>
 
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
         <script src="js/app.js"></script>
         <script type="text/javascript">
