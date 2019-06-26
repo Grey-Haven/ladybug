@@ -4,6 +4,7 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
 <!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->    
     <head>
+        <script type="text/javascript" src="js/revelation.js"></script>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
@@ -95,45 +96,7 @@
             </main> <!-- .main-content -->
 
             <footer class="site-footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="widget">
-                                <h3 class="widget-title">Our address</h3>
-                                <p>There is but one Church in which men find salvation, just as outside the ark of Noah it was not possible for anyone to be saved. (Thomas Aquinas)</p>
-                                <ul class="address">
-                                    <li><i class="fa fa-map-marker"></i> 1313 Mockingbird Ln, Cleveland, OH 44106</li>
-                                    <li><i class="fa fa-phone"></i> (216) 555 0180</li>
-                                    <li><i class="fa fa-envelope"></i> info@passoverangel.com</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="widget text-center">
-                                <h2 class="widget-title">Free Gift With Donation!</h2>
-                                <a href="book.html"><img src="images/book_thumb.png"></a>
-                                <p><strong>$29.95</strong></p>
-                                <img src="https://www.paypalobjects.com/webstatic/en_US/i/btn/png/btn_donate_cc_147x47.png" alt="Donate">
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="widget">
-                                <h3 class="widget-title"><a name="contact">Contact form</a></h3>
-                                <form action="#" class="contact-form">
-                                    <div class="row">
-                                        <div class="col-md-6"><input type="text" placeholder="Your name..."></div>
-                                        <div class="col-md-6"><input type="text" placeholder="Email..."></div>
-                                    </div>
-                                    <textarea id="message" name="" placeholder="Your message..."></textarea>
-<!--                                    <div class="text-right"><input type="submit" value="Send message"></div> -->
-                                    <div class="text-right"><input class="my-button" type="button" onclick="revelation()" value="Send message"></input></div>
-                                </form>
-                            </div>
-                        </div>
-                    </div> <!-- .row -->
-
-                    <p class="colophon">Copyright 2017 Church of the Passover Angel. All right reserved</p>
-                </div><!-- .container -->
+                <div id="contact"></div>
             </footer> <!-- .site-footer -->
         </div>
 
@@ -142,15 +105,7 @@
 		<script> 
 		$(document).ready(function(){
             $("#contact").load("contact.html");
-            $("#contact").click(revelation);
 		});
 		</script> 
-        <script>
-            function revelation() {
-                if (document.getElementById("message").value === "I saw the light") {
-                    window.open('./mp3/jude.mp3')
-                }
-            }
-        </script>
     </body>
 </html>
