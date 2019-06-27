@@ -236,18 +236,41 @@
                 $(document).snow({ SnowImage: "images/floatingfrog.gif", Quantity: 20 });
 
                 // Countdown Timer
-                var start = new Date();
-                var daysToAdd = 5;
+                // var start = new Date();
+                // var daysToAdd = 5;
 
-                if (window.location.hash) {
-                    daysToAdd = parseInt(window.location.hash.split('#')[1]);
-                }
+                // if (window.location.hash) {
+                //     daysToAdd = parseInt(window.location.hash.split('#')[1]);
+                // }
+ 				// the following are the days at 12:01 AM EST
+				var thursday = new Date(1561608060_000);
+				var friday = new Date(1561694460_000);
+				var saturday = new Date(1561780860_000);
+				var sunday = new Date(1561867260_000);
+				var monday = new Date(1561953660_000); 
+				var tuesday = new Date(1562040060_000); 
+                // var end = new Date();
+				// end.setDate(start.getDate() + daysToAdd);
+				
+				var start = thursday;
 
-                var end = new Date();
-                end.setDate(start.getDate() + daysToAdd);
-                // Set 8pm
-                end.setHours(20);
-                end.setMinutes(0);
+				var currentESThour = 20; // 8PM EST
+				var currentMinute = new Date().getMinutes();
+				var currentSecond = new Date().getSeconds();
+
+				var gmtOffset = 4;
+
+				start.setUTCHours(currentESThour + gmtOffset);
+				start.setMinutes(currentMinute);
+				start.setSeconds(currentSecond);
+				
+				var end = new Date();
+				end.setDate(3);
+				end.setMonth(6);
+				end.setFullYear(2019);
+                // Set 8pm EST
+                end.setUTCHours(0);
+				end.setMinutes(0);
 
                 var diff = Math.floor((end.getTime() - start.getTime())/1000);
 
