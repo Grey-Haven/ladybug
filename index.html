@@ -265,12 +265,12 @@
 				start.setSeconds(currentSecond);
 				
 				var end = new Date();
-				end.setDate(3);
-				end.setMonth(6);
-				end.setFullYear(2019);
+				end.setUTCDate(3);
+				end.setUTCMonth(6);
+				end.setUTCFullYear(2019);
                 // Set 8pm EST
                 end.setUTCHours(0);
-				end.setMinutes(0);
+				end.setUTCMinutes(0);
 
                 var diff = Math.floor((end.getTime() - start.getTime())/1000);
 
